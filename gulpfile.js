@@ -8,12 +8,13 @@ const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
+const server = require('browser-sync').create();
 
 // file path vars
 const files = {
     scssPath: 'src/scss/**/*.scss',
-    jsPath: 'src/js/**/*.js'
-
+    jsPath: 'src/js/**/*.js',
 }
 
 // making tasks 
@@ -23,7 +24,7 @@ function scssTask(){
         .pipe(sass())
         .pipe(postcss([ autoprefixer(), cssnano() ]))
         .pipe(sourcemaps.write(''))
-        .pipe(dest('dist')
+        .pipe(dest('dist/css')
     );
 }
 
@@ -31,19 +32,26 @@ function jsTask(){
     return src(files.jsPath)
         .pipe(concat('main.js'))
         .pipe(uglify())
-        .pipe(dest('dist')
+        .pipe(dest('dist/js')
     );
 }
 
+function imageminTask(){
+    return src(['./src/img/**/*'])
+        .pipe(imagemin())
+        .pipe(dest('dist/Assets'))
+}
+
 // Loading the new version of the file
-const cbString = new Date().getTime();
+/* const cbString = new Date().getTime();
 
 function cacheBustTask(){
     return src(['./src/index.html'])
         .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
-        .pipe(dest('.')
+        .pipe(dest('dist')
     );
-}
+} */
+
 
 function watchTask(){
     watch([files.scssPath, files.jsPath],
@@ -52,6 +60,7 @@ function watchTask(){
 
 exports.default = series(
     parallel(scssTask, jsTask),
-    cacheBustTask,
+    // cacheBustTask,
+    imageminTask,
     watchTask
 );

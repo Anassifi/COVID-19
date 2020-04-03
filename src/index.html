@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corona Website</title>
-    <link rel="stylesheet" href="dist/style.css?cb=123">
+    
+    <link rel="stylesheet" href="../dist/css/style.css">
 </head>
 <body>
-    <h2>This just just a test (init)</h2>
-    <script src="dist/main.js?cb=123"></script>
+    <div class="hero">
+        <div class="hero__header">
+            <div class="hero__nav">
+                <ul class="hero__title">
+                    <button class="hero__lang"><img src="./img/ilang.svg" alt="lang">عربي</button>
+                    <img class="hero__logo" src="./img/logo__sante.svg" alt="">
+                    <li><a class="hero__item" href="#">Conseil</a></li>
+                    <li><a class="hero__item hero__item--blue" href="#">Accueil</a></li>
+                </ul>
+            </div>
+            <div class="hero__warn">
+                <h3 class="warn__title">LA DERNIÈRE INFO MÉDICALE</h3>
+                <p class="warn__text">La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur d'aggravation de l’infection. En cas de fièvre, prenez du paracétamol.
+                    N'arrêtez pas votre traitement ! Consultez votre médecin ou votre pharmacien.</p>
+            </div>
+            <div class="hero__banner ltr">
+                <div class="hero__png">
+                    <img src="./img/docs.svg" alt="">
+                </div>
+                <div class="hero__info">
+                    <h2 class="info__title"> Vous pensez avoir été exposé au <br>
+                        Coronavirus COVID-19 et avez des symptômes ? </h2>
+                    <img class="info__icon" src="./img/sicon.svg" alt="">
+                    <p class="info__text">
+                        Je reste vigilant ? <br>
+                        Je programme une téléconsultation ? <br> J'appelle le 15 ? <br>
+                        Faites le test pour répondre en citoyen <br> éclairé selon vos symptômes.
+                    </p>
+                    <button class="info__btn">Demarer le test</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../dist/js/main.js"></script>
 </body>
 </html>

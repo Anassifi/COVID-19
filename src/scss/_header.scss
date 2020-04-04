@@ -101,6 +101,12 @@ body{
 .hero__png{
     width: 39.45rem;
     height: 30.543125rem;
+    img {
+        width: 39.3125rem;
+        height: 29.543125rem;
+        top: 1rem;
+        position: relative;
+    }
 }
 
 .hero__info{
@@ -142,6 +148,7 @@ body{
 .info__btn{
     position: relative;
     left: 1rem;
+    top: .7rem;
     height: 3rem;
     background-color: $color-rest;
     border-color: $color-blue;

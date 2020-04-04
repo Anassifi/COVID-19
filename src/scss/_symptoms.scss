@@ -1,0 +1,55 @@
+//symptoms styles
+
+.symptoms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.symptoms__types {
+    font-size: 2.1875rem;
+    line-height: 1em;
+    color: $color-blue;
+    margin-bottom: 3.25rem;
+}
+
+.symptoms__grid {
+    width: 36.60125rem;
+    height: 32.0625rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 5rem;
+
+}
+
+.symptoms__title{
+    position: relative;
+    top: .5em;
+    left: .2em;
+    width: 12.6625rem;
+    height: 5.75rem;
+    font-weight: 600;
+    font-size: 2.0625rem;
+    line-height: 1em;
+}
+
+.symptoms__puke > img {
+    width: 7.639375rem;
+    height: 8.125rem;
+    position: relative;
+    top: 2.5em;
+    margin-bottom: 2em;
+}
+
+.symptoms__puke > h2 {
+    width: 15.39375rem;
+}
+
+.symptoms__cough > img {
+    position: relative;
+    top: 1em;
+    margin-bottom: 1em;
+}
+

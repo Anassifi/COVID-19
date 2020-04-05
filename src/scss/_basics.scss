@@ -23,5 +23,10 @@ $color-rest:#ffffff;
     &:hover{
         background-color: $color-blue;
         color: $color-rest;
+        cursor: pointer;
+    }
+
+    &:focus{
+        outline:none;
     }
 }

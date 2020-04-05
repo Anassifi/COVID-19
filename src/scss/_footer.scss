@@ -1,0 +1,98 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__logo{
+        padding-top: 1em;
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 5%;
+        padding-left: 10%;
+    }
+
+    &__wrapper > div{
+        padding-right: 5%;
+    }
+
+    &__nav{
+        width: 6.700625rem;
+        height: 11.113125rem;
+        list-style: none;
+        line-height: 3rem;
+    }
+
+    &__item {
+        padding-right: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000000;
+        &--blue{
+            color: $color-blue;
+        }
+    }
+
+    &__lang{
+        width: 5.359375rem;
+        height: 2.3125rem;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        left: -1.4rem;
+        border: 1px solid $color-rblue;
+        border-radius: .625rem;
+        background: none;
+        margin-right: 0;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #000;
+        text-transform: uppercase;
+        cursor: pointer;
+        img {
+            padding-left: .9rem;
+        }
+    }
+
+    &__lang:focus{
+        outline: none;
+    }
+
+    &__contact{
+        width: 80rem;
+        height: 16.625rem;
+        text-align: center;
+        line-height: 3rem;
+
+        &--title {
+            font-size: 1.6875rem;
+            color: $color-blue;
+        }
+
+        h4 {
+            font-size: 1.1875rem;
+        }
+
+        h3 {
+           font-size: 1.6875rem;
+           color: $color-green;
+        }
+    }
+
+    &__info{
+        position: relative;
+        top: 3rem;
+        width: 101.2rem;
+        height: 8.8125rem;
+        color: $color-font;
+    }
+
+    &__end{
+        width: 100vw;
+        height: 2.25rem;
+        background-color: $color-blue;
+    }
+}

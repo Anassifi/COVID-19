@@ -65,9 +65,14 @@ body{
     font-weight: 600;
     font-size: 1.25rem;
     color: $color-rblue;
+    cursor: pointer;
     img {
         padding-left: .9rem;
     }
+}
+
+.hero__lang:focus{
+    outline: none;
 }
 
 .hero__warn {

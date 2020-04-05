@@ -1,0 +1,27 @@
+$color-blue:#1078AD;
+$color-rblue:#1A519E;
+$color-yellow:#F4CF1B;
+$color-ciel:#96C5DC;
+$color-gray:#e9ecef;
+$color-green:#369D53;
+$color-font:#7F7F7F;
+$color-titlef:#D0E5F0;
+$color-rest:#ffffff;
+@mixin testBtn {
+    position: relative;
+    left: 1rem;
+    top: .7rem;
+    height: 3rem;
+    background-color: $color-rest;
+    border-color: $color-blue;
+    border-radius: 0.3125rem;
+    color: $color-blue;
+    font-family: Cairo, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    &:hover{
+        background-color: $color-blue;
+        color: $color-rest;
+    }
+}

@@ -22,7 +22,7 @@ $color-rest:#ffffff;
 
     &:hover{
         background-color: $color-blue;
-        color: $color-rest;
+        color: $color-rest !important;
         cursor: pointer;
     }
 

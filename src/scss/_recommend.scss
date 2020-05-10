@@ -8,6 +8,7 @@
         position: relative;
         top: 1em;
         color: $color-titlef;
+        font-size: 1.6rem;
     }
 
     &__text{
@@ -21,6 +22,7 @@
         font-size: 1.5rem;
         font-weight: 600;
         color: $color-rest;
+        line-height: 3rem;
         &::first-line{
             color: #000;
         }
@@ -30,9 +32,9 @@
         width: 15.35625rem;
         height: 14.135625rem;
         position: relative;
-        top: -17em;
-        left: 55em;
-        line-height: 4em;
+        bottom: 18em;
+        left: 70em;
+        line-height: 6em;
 
         h3:nth-child(1){
             font-size: 1.9375rem;

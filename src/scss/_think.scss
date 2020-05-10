@@ -3,16 +3,18 @@
     height: 14rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
     background-color: $color-ciel;
     &__title{
-
+        font-size: 1.6rem;
+        padding-bottom: 1%;
+        color: $color-blue;
     }
     &__btn{
         @include testBtn();
         width: 40rem;
-        left: 19.5rem;
     }
 
 }

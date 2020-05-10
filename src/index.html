@@ -9,20 +9,21 @@
 </head>
 <body>
     <div class="hero">
+        <!-- inject(html) [./header.html] -->
         <div class="hero__header">
             <div class="hero__nav">
+                <img class="hero__logo" src="./img/logo__sante.svg" alt="logo">
                 <ul class="hero__title">
-                    <button class="hero__lang">ﻋﺮﺑﻲ <img src="./img/ilang.svg" alt="lang"></button>
-                    <img class="hero__logo" src="./img/logo__sante.svg" alt="logo">
-                    <li><a class="hero__item" href="#">Conseil</a></li>
+                    <li><a class="hero__item" href="./conseil.html">Conseil</a></li>
                     <li><a class="hero__item hero__item--blue" href="#">Accueil</a></li>
                 </ul>
+                <button class="hero__lang">ﻋﺮﺑﻲ <img src="./img/ilang.svg" alt="lang"></button>
             </div>
             <div class="hero__warn">
                 <h3 class="warn__title">LA DERNIÈRE INFO MÉDICALE</h3>
                 <p class="warn__text">La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur d'aggravation de l’infection. En cas de fièvre, prenez du paracétamol.
                     N'arrêtez pas votre traitement ! Consultez votre médecin ou votre pharmacien.</p>
-            </div>
+        </div>
             <div class="hero__banner ltr">
                 <div class="hero__png">
                     <img src="./img/docs.svg" alt="">
@@ -36,7 +37,7 @@
                         Je programme une téléconsultation ? <br> J'appelle le 15 ? <br>
                         Faites le test pour répondre en citoyen <br> éclairé selon vos symptômes.
                     </p>
-                    <button class="info__btn">Demarer le test</button>
+                    <button onclick="window.location.href='./test.html'" class="info__btn">Demarer le test</button>
                 </div>
             </div>
         </div>
@@ -80,7 +81,7 @@
     <div class="think">
         <h2 class="think__title"> Vous pensez avoir été exposé au Coronavirus COVID-19 et avez des symptômes ? </h2>
         <img src="./img/sicon.svg" alt="sick" class="think__img">
-        <button class="think__btn">Demarer le test</button>
+        <button onclick="window.location.href='./test.html'" class="think__btn">Demarer le test</button>
     </div>
     <div class="footer">
         <img class="footer__logo" src="./img/logo__sante.svg" alt="logo">
@@ -105,6 +106,7 @@
         </div>
         <div class="footer__end"></div>
     </div>
-    <script src="../dist/js/main.js"></script>
+    <!-- inject(js) [../dist/js/main.js] -->
+    <script src="../dist//js/main.js"></script>
 </body>
 </html>

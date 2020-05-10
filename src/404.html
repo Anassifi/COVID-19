@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Website</title>
+    <link rel="stylesheet" href="../dist/css/style.css">
+</head>
+<body>
+<div class="hero">
+        <!-- inject(html) [./header.html] -->
+        <div class="hero__header hero__header--none">
+            <div class="hero__nav">
+                <img class="hero__logo" src="./img/logo__sante.svg" alt="logo">
+                <ul class="hero__title">
+                    <li><a class="hero__item" href="./conseil.html">Conseil</a></li>
+                    <li><a class="hero__item" href="./index.html">Accueil</a></li>
+                </ul>
+                <button class="hero__lang">ﻋﺮﺑﻲ <img src="./img/ilang.svg" alt="lang"></button>
+            </div>
+        </div>
+</div>
+<div class="wrapper--404">
+    <main class="main__404">
+        <img src="../dist/Assets/404.png" alt="image erreur 404" title="erreur 404">
+        <h2 class="main__404__title">tu es perdu</h2>
+        <a href="index.html">retourner à l'accueil</a>
+</main>
+</div>
+<div class="footer">
+        <img class="footer__logo" src="./img/logo__sante.svg" alt="logo">
+        <div class="footer__wrapper">
+            <div class="footer__nav"><button class="footer__lang">fran <img src="./img/ilang.svg" alt="lang"></button>
+                <li><a class="footer__item footer__item--blue" href="#">Accueil</a></li>
+                <li><a class="footer__item" href="#">Conseil</a></li>
+            </div>
+            <div class="footer__contact">
+                <h2 class="footer__contact--title">Contacts utiles</h2>
+                <h4>Chiffre économique "Alo épidémie vigilance"</h4>
+                <h3>080 100 47 47</h3>
+                <h4>Aide médicale urgente</h4>
+                <h3>114</h3>
+            </div>
+            <div class="footer__info">
+                <p>Algorithme d'orientation mis à jour sur les recommandations en vigueur 
+                    au 22/03/2020 à 16h15.  Ce site d’information n’est pas un dispositif médical, 
+                    il ne délivre pas d’avis médical. Projet solidaire d'urgence,financé par l’Alliance 
+                    Digitale contre le COVID-19 : @maladiecovid19</p>
+            </div>
+        </div>
+        <div class="footer__end"></div>
+</div>
+<!-- inject(js) [../dist/js/main.js] -->
+<script src="./js/app.js"></script>
+</body>
+</html>

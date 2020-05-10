@@ -131,6 +131,10 @@
         justify-content: center;
         align-items: center;
         width: 50vw;
+        a:link, a:visited,a:active, a:hover{
+            color: unset;
+            text-decoration: none;
+        }
     }
 
     &__website{

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
+.header__text {
+  display: none;
+}
+
+.main__404 {
+  margin: 60px;
+  text-align: center;
+  // color: #1997AB;
+
+
+  img {
+    width: 60%;
+    margin: 5% 0%;
+  }
+
+  h2 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 5%;
+  }
+
+  a {
+    font-size: 2em;
+    color: white;
+    background-color: $color-blue;
+    padding: 0em 2em;
+    font-weight: 700;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+}
+
+.hero__header--none{
+  height: 0;
+}

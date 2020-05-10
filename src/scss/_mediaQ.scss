@@ -1,0 +1,75 @@
+@media only screen and (min-width: 1200px) {
+
+    .hero__info {
+        position: relative;
+        right: 0rem;
+        padding-right: 0%;
+        width: 32.45rem;
+        height: 30.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero__png img {
+        width: 33.3125rem;
+        height: 29.543125rem;
+        top: 1rem;
+        position: relative;
+        left: 5rem;
+    }
+
+    .recommendations__call{
+        left: 65em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    .hero__png img {
+        width: 30.3125rem;
+        height: 29.543125rem;
+        top: 1rem;
+        position: relative;
+        left: 2em;
+    }
+
+    .hero__info {
+        position: relative;
+        right: 3rem;
+        width: 29.45rem;
+        height: 30.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero .info__btn {
+        left: 5rem;
+        top: 0;
+        height: 3rem;
+        background-color: #fff;
+        border-color: #1078ad;
+        border-radius: .3125rem;
+        color: #1078ad;
+        font-family: Cairo,sans-serif;
+    }
+
+    .recommendations__call {
+        width: 13.35625rem;
+        height: 14.135625rem;
+        position: relative;
+        bottom: 18em;
+        left: 45em;
+        line-height: 4em;
+    }
+
+    .recommendations__text {
+        font-family: Cairo;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+}

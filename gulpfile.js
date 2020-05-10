@@ -7,13 +7,16 @@ const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
+const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
+/* const injectHTML = require('gulp-inject-in-html'); */
 
 // file path vars
 const files = {
     scssPath: 'src/scss/**/*.scss',
-    jsPath: 'src/js/**/*.js'
-
+    jsPath: 'src/js/**/*.js',
+    htmlPath: 'src/html/**/*.html'
 }
 
 // making tasks 
@@ -23,27 +26,32 @@ function scssTask(){
         .pipe(sass())
         .pipe(postcss([ autoprefixer(), cssnano() ]))
         .pipe(sourcemaps.write(''))
-        .pipe(dest('dist')
+        .pipe(dest('dist/css')
     );
 }
 
 function jsTask(){
     return src(files.jsPath)
+        .pipe(babel({
+            presets: ['env']
+        }))
         .pipe(concat('main.js'))
         .pipe(uglify())
-        .pipe(dest('dist')
+        .pipe(dest('dist/js')
     );
 }
 
-// Loading the new version of the file
-const cbString = new Date().getTime();
-
-function cacheBustTask(){
-    return src(['./src/index.html'])
-        .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
-        .pipe(dest('.')
-    );
+function imageminTask(){
+    return src(['./src/img/**/*'])
+        .pipe(imagemin())
+        .pipe(dest('dist/Assets'))
 }
+
+/* function htmlTask() {
+    return src(files.htmlPath)
+      .pipe(injectHTML())
+      .pipe(dest('src/'));
+} */
 
 function watchTask(){
     watch([files.scssPath, files.jsPath],
@@ -52,6 +60,7 @@ function watchTask(){
 
 exports.default = series(
     parallel(scssTask, jsTask),
-    cacheBustTask,
+    // cacheBustTask,
+    imageminTask,
     watchTask
 );

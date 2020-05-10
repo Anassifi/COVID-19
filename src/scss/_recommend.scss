@@ -1,0 +1,60 @@
+.recommendations {
+    width: 100vw;
+    height: 30.4375rem;
+    background-color: $color-blue;
+    text-align: center;
+    
+    &__title{
+        position: relative;
+        top: 1em;
+        color: $color-titlef;
+        font-size: 1.6rem;
+    }
+
+    &__text{
+        position: relative;
+        top: 2em;
+        left: 3em;
+        width: 59.418125rem;
+        height: 22.354375rem;
+        text-align: left;
+        font-family: 'Cairo';
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $color-rest;
+        line-height: 3rem;
+        &::first-line{
+            color: #000;
+        }
+    }
+
+    &__call{
+        width: 15.35625rem;
+        height: 14.135625rem;
+        position: relative;
+        bottom: 18em;
+        left: 70em;
+        line-height: 6em;
+
+        h3:nth-child(1){
+            font-size: 1.9375rem;
+            color: $color-yellow;
+        }
+
+        h3:nth-child(2){
+            color: $color-blue;
+            font-size: 1.875rem;
+            background-color: $color-yellow;
+            padding: .4em;
+            border-radius: .2rem;
+            line-height: 2em;
+        }
+
+        a{
+            color: $color-rest;
+            text-decoration-color: $color-yellow;
+            font-size: 1.6875rem;
+            font-family: Arial;
+        }
+    }
+}

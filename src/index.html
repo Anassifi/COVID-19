@@ -4,10 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corona Website</title>
-    <link rel="stylesheet" href="dist/style.css?cb=123">
+    
+    <link rel="stylesheet" href="../dist/css/style.css">
 </head>
 <body>
-    <h2>This just just a test (init)</h2>
-    <script src="dist/main.js?cb=123"></script>
+    <div class="hero">
+        <!-- inject(html) [./header.html] -->
+        <div class="hero__header">
+            <div class="hero__nav">
+                <img class="hero__logo" src="./img/logo__sante.svg" alt="logo">
+                <ul class="hero__title">
+                    <li><a class="hero__item" href="./conseil.html">Conseil</a></li>
+                    <li><a class="hero__item hero__item--blue" href="#">Accueil</a></li>
+                </ul>
+                <button class="hero__lang">ﻋﺮﺑﻲ <img src="./img/ilang.svg" alt="lang"></button>
+            </div>
+            <div class="hero__warn">
+                <h3 class="warn__title">LA DERNIÈRE INFO MÉDICALE</h3>
+                <p class="warn__text">La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur d'aggravation de l’infection. En cas de fièvre, prenez du paracétamol.
+                    N'arrêtez pas votre traitement ! Consultez votre médecin ou votre pharmacien.</p>
+        </div>
+            <div class="hero__banner ltr">
+                <div class="hero__png">
+                    <img src="./img/docs.svg" alt="">
+                </div>
+                <div class="hero__info">
+                    <h2 class="info__title"> Vous pensez avoir été exposé au <br>
+                        Coronavirus COVID-19 et avez des symptômes ? </h2>
+                    <img class="info__icon" src="./img/sicon.svg" alt="sick">
+                    <p class="info__text">
+                        Je reste vigilant ? <br>
+                        Je programme une téléconsultation ? <br> J'appelle le 15 ? <br>
+                        Faites le test pour répondre en citoyen <br> éclairé selon vos symptômes.
+                    </p>
+                    <button onclick="window.location.href='./test.html'" class="info__btn">Demarer le test</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="symptoms">
+        <h2 class="symptoms__types">Quels sont les symptômes à surveiller ?</h2>
+        <div class="symptoms__grid">
+            <div class="symptoms__fever">
+                <img src="./img/fever.svg" alt="fever">
+                <h2 class="symptoms__title">Fièvre</h2>
+            </div>
+            <div class="symptoms__puke">
+                <img src="./img/puke.svg" alt="puke">
+                <h2 class="symptoms__title">Nausées<br>et vomissements</h2>
+            </div>
+            <div class="symptoms__breathing">
+                <img src="./img/breathing.svg" alt="breathing"> 
+                <h2 class="symptoms__title">Gêne respiratoire</h2>
+            </div>
+            <div class="symptoms__cough">
+                <img src="./img/cough.svg" alt="">
+                <h2 class="symptoms__title">Toux et maux de gorge</h2>
+            </div>
+        </div>
+    </div>
+    <div class="recommendations">
+        <h2 class="recommendations__title">Recommandations officielles</h2>
+        <p class="recommendations__text"><b>Si vous pensez être malade,<br>
+            évitez les endroits publics.<br>
+            Ne rendez pas visite aux personnes fragiles.<br>
+            Évitez de sortir de chez vous.<br>
+            Respectez les mesures barrière (lavage de main, masque).<br>
+            Surveillez vos symptômes, l’évolution de votre température<br> 
+            corporelle et recherchez un avis médical.</b> </p>
+        <div class="recommendations__call">
+            <h3>Apple Gratuit</h3>
+            <h3>080 100 47 47</h3>
+            <a href="https://www.sante.gov.ma" target="_blank">www.sante.gov.ma</a>
+        </div>
+    </div>
+    <div class="think">
+        <h2 class="think__title"> Vous pensez avoir été exposé au Coronavirus COVID-19 et avez des symptômes ? </h2>
+        <img src="./img/sicon.svg" alt="sick" class="think__img">
+        <button onclick="window.location.href='./test.html'" class="think__btn">Demarer le test</button>
+    </div>
+    <div class="footer">
+        <img class="footer__logo" src="./img/logo__sante.svg" alt="logo">
+        <div class="footer__wrapper">
+            <div class="footer__nav"><button class="footer__lang">fran <img src="./img/ilang.svg" alt="lang"></button>
+                <li><a class="footer__item footer__item--blue" href="#">Accueil</a></li>
+                <li><a class="footer__item" href="#">Conseil</a></li>
+            </div>
+            <div class="footer__contact">
+                <h2 class="footer__contact--title">Contacts utiles</h2>
+                <h4>Chiffre économique "Alo épidémie vigilance"</h4>
+                <h3>080 100 47 47</h3>
+                <h4>Aide médicale urgente</h4>
+                <h3>114</h3>
+            </div>
+            <div class="footer__info">
+                <p>Algorithme d'orientation mis à jour sur les recommandations en vigueur 
+                    au 22/03/2020 à 16h15.  Ce site d’information n’est pas un dispositif médical, 
+                    il ne délivre pas d’avis médical. Projet solidaire d'urgence,financé par l’Alliance 
+                    Digitale contre le COVID-19 : @maladiecovid19</p>
+            </div>
+        </div>
+        <div class="footer__end"></div>
+    </div>
+    <!-- inject(js) [../dist/js/main.js] -->
+    <script src="../dist//js/main.js"></script>
 </body>
 </html>

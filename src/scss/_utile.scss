@@ -1,0 +1,26 @@
+html,
+body {
+    height: 100%; //100%
+}
+
+body {
+    margin: 0; //marign:0
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+}
+
+.ltr {
+    direction: ltr !important;
+}
+
+.rtl {
+    direction: rtl !important;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}

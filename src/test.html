@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona Website</title>
+    
+    <link rel="stylesheet" href="../dist/css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <!-- inject(html) [./header.html] -->
+        <div class="hero__header hero__header--none">
+            <div class="hero__nav">
+                <img class="hero__logo" src="./img/logo__sante.svg" alt="logo">
+                <ul class="hero__title">
+                    <li><a class="hero__item" href="./conseil.html">Conseil</a></li>
+                    <li><a class="hero__item" href="./index.html">Accueil</a></li>
+                </ul>
+                <button class="hero__lang">ﻋﺮﺑﻲ <img src="./img/ilang.svg" alt="lang"></button>
+            </div>
+        </div>
+    </div>
+    <!-- test start -->
+<div class="wrapper">
+        
+    <!-- Stepper progress bar -->
+
+    <div class="container">
+        <ul class="progressbar">
+            <li class="active">Informations</li>
+            <li >Questionnaire</li>
+            <li>Résultats</li>
+        </ul>
+    </div>
+
+    <!-- Quizz Infos Préambule -->
+
+    <section class="info section">
+
+        <h1>Préambule</h1>
+    
+        <p>L’application est fournie à titre gratuit, en l’état, uniquement à des fins d’information pour contribuer à
+          fluidifier la prise en charge des personnes par les services d’urgences pendant l’épidémie de Coronavirus
+          COVID-19. L’exhaustivité, l’exactitude, le caractère à jour des informations et contenus mis à disposition
+          dans cette application, ou leur adéquation à des finalités particulières, ne sont pas garantis.</p>
+    
+        <hr>
+        <p>Cette application ne substitue pas votre médecin qui est plus apte à vous donner plus de précision.
+          Les informations de cette application est le premier niveau de la détection des cas possibles du COVID-19.
+        </p>
+    
+        <button class="start-test">Demarer le test</button>
+      </section>
+    
+
+    <section class="questions section disappear">
+
+        <div class="prog">
+            <progress max="22" value="1"></progress>
+            <h3><span class="Qnumber">1</span>/22</h3>
+        </div>
+
+        <div class="quizz">
+            <div class="question"></div>
+        </div>
+
+        <div class="btns">
+            <button class="previous">Précédent</button>
+            <button class="next">Suivant</button>
+            <button class="result disappear">Afficher le resultat</button>
+        </div>
+
+    </section>
+
+    <section class="results section disappear">
+        <h1 class="results__title">Résultats</h1>
+        <div class="results__final">
+            <p class="results__text"></p>
+            <p class="results__text--info">Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène.</p>
+            <button class="results__btn">Recommencer le test</button>
+        </div>
+    </section>
+</div>
+
+    <!-- test end -->
+    <div class="recommendations">
+        <h2 class="recommendations__title">Recommandations officielles</h2>
+        <p class="recommendations__text"><b>Si vous pensez être malade,<br>
+            évitez les endroits publics.<br>
+            Ne rendez pas visite aux personnes fragiles.<br>
+            Évitez de sortir de chez vous.<br>
+            Respectez les mesures barrière (lavage de main, masque).<br>
+            Surveillez vos symptômes, l’évolution de votre température<br> 
+            corporelle et recherchez un avis médical.</b> </p>
+        <div class="recommendations__call">
+            <h3>Apple Gratuit</h3>
+            <h3>080 100 47 47</h3>
+            <a href="https://www.sante.gov.ma" target="_blank">www.sante.gov.ma</a>
+        </div>
+    </div>
+    <div class="footer">
+        <img class="footer__logo" src="./img/logo__sante.svg" alt="logo">
+        <div class="footer__wrapper">
+            <div class="footer__nav"><button class="footer__lang">fran <img src="./img/ilang.svg" alt="lang"></button>
+                <li><a class="footer__item footer__item--blue" href="#">Accueil</a></li>
+                <li><a class="footer__item" href="#">Conseil</a></li>
+            </div>
+            <div class="footer__contact">
+                <h2 class="footer__contact--title">Contacts utiles</h2>
+                <h4>Chiffre économique "Alo épidémie vigilance"</h4>
+                <h3>080 100 47 47</h3>
+                <h4>Aide médicale urgente</h4>
+                <h3>114</h3>
+            </div>
+            <div class="footer__info">
+                <p>Algorithme d'orientation mis à jour sur les recommandations en vigueur 
+                    au 22/03/2020 à 16h15.  Ce site d’information n’est pas un dispositif médical, 
+                    il ne délivre pas d’avis médical. Projet solidaire d'urgence,financé par l’Alliance 
+                    Digitale contre le COVID-19 : @maladiecovid19</p>
+            </div>
+        </div>
+        <div class="footer__end"></div>
+    </div>
+    <!-- inject(js) [../dist/js/main.js] -->
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -119,16 +119,19 @@ const Question = [
         if(graveMinCount == 0 && graveMajCount == 0){
             resultsText.textContent = `${textFinal[1]}, ${textFinal[3]}`;
             resultsText.style.color = '#F4CF1B';
-        } else if(graveMinCount = 1){
+        } else if(graveMinCount == 1){ // bug fixed
             resultsText.textContent = `${textFinal[1]}, ${textFinal[3]}`;
             resultsText.style.color = '#F4CF1B';
         } else if(graveMinCount >= 2){ // assuming none of the above is true
             resultsText.textContent = textFinal[2];
             resultsText.style.color = '#d63031';
+            // added fontsize for red results
+            resultsText.style.fontSize = '4rem';
         } // + index 3 for all textFinal[1]
     } else if((fPronosCount == 0 || fPronosCount >= 1) && graveMajCount >= 1){
         resultsText.textContent = textFinal[2];
         resultsText.style.color = '#d63031';
+        resultsText.style.fontSize = '4rem';
     }
   } else if(responses[0] == 'Oui' && responses[2] == 'Oui'){
     if(fPronosCount == 0){
@@ -148,11 +151,13 @@ const Question = [
         } else{ //more than 1 MinGravite
             resultsText.textContent = textFinal[2];
             resultsText.style.color = '#d63031';
+            resultsText.style.fontSize = '4rem';
         }
   
     } else if((fPronosCount == 0 || fPronosCount >= 1) && graveMajCount >= 1){
         resultsText.textContent = textFinal[2];
         resultsText.style.color = '#d63031';
+        resultsText.style.fontSize = '4rem';
     }
   
   } else if(responses[0] == 'Oui' || responses[2] == 'Oui' ||
@@ -166,7 +171,6 @@ const Question = [
                     resultsText.style.color = '#026534';
   
                 }
-  
   
   } else if(responses[0] == 'Non' && responses[2] == 'Non' && responses[3] == 'Non' && responses[4] == 'Non' && responses[5] == 'Non'){
     resultsText.textContent = textFinal[6];
